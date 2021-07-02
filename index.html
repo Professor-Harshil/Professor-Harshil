@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<center><title>Login Page</title>
+		<style type="text/css">
+			body{
+				background-color: lightblue;
+			}
+		</style>
+	<script type="text/javascript">
+		function checkpassword(){
+			var password = document.getElementById("passwordbox");
+			var passwordText = password.value;
+			if (passwordText == "12345"){
+				return true;
+}
+			else{
+				alert("Access Denied Nerd");
+				return false;
+			}
+		}
+</script>
+</head>
+<body>
+	<p style="font-size: 50px;">Welcome!</p>
+	<p>Please enter the password to view the following website</p>
+	<p>password: <input id="passwordbox" type="password"></p>
+	<a href="Harshil.html" onclick="return checkpassword();">
+		click here to submit your password and type </a></center>
+
+
+</body>
+</html>
